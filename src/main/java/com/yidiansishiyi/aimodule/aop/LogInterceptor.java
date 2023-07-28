@@ -18,7 +18,6 @@ import java.util.UUID;
  * 请求响应日志 AOP
  *
  * @author sanqi
- *   
  **/
 @Aspect
 @Component
@@ -28,7 +27,7 @@ public class LogInterceptor {
     /**
      * 执行拦截
      */
-    @Around("execution(* com.yupi.springbootinit.controller.*.*(..))")
+    @Around("execution(* com.yidiansishiyi.aimodule.controller.*.*(..))")
     public Object doInterceptor(ProceedingJoinPoint point) throws Throwable {
         // 计时
         StopWatch stopWatch = new StopWatch();
